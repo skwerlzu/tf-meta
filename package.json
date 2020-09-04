@@ -39,8 +39,10 @@
     "babel-preset-minify": "^0.4.3"
   },
   "files": [
-    "dist/source.js",
-    "dist/main.min.js"
+    "dist/client_source.js",
+    "dist/client.min.js",
+	"dist/server_source.js",
+    "dist/server.min.js"
   ],
   "homepage": "https://github.com/informedecommerce/trakfind-meta.git#readme",
   "keywords": [
@@ -54,9 +56,11 @@
     "url": "git+https://github.com/informedecommerce/trakfind-meta.git"
   },
   "scripts": {
-    "build": "npm run build:development && npm run build:production",
-    "build:development": "babel -o dist/source.js --plugins @babel/plugin-transform-modules-umd src/source.js",
-    "build:production": "babel -o dist/main.min.js -s --plugins @babel/plugin-transform-modules-umd --presets minify src/source.js",
+    "build": "npm run build:development_client && npm run build:production_client && npm run build:development_server && npm run build:production_server",
+    "build:development_client": "babel -o dist/client_source.js --plugins @babel/plugin-transform-modules-umd src/client_source.js",
+	  "build:development_server": "babel -o dist/client_source.js --plugins @babel/plugin-transform-modules-umd src/server_source.js",
+    "build:production_client": "babel -o dist/client.min.js -s --plugins @babel/plugin-transform-modules-umd --presets minify src/client_source.js",
+	  "build:production_server": "babel -o dist/server.min.js -s --plugins @babel/plugin-transform-modules-umd --presets minify src/server_source.js",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 0"
   },

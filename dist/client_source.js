@@ -8,7 +8,7 @@
       exports: {}
     };
     factory();
-    global.source = mod.exports;
+    global.server_source = mod.exports;
   }
 })(this, function () {
   "use strict";
