@@ -16,5 +16,5 @@ Via application package json:
 
 ```bash
 # Additional typescript definitions
-"agile-npm": "git+https://github.com/skwerlzu/tf-meta.git"
+"trakfind-meta": "git+https://github.com/skwerlzu/tf-meta.git"
 ```
