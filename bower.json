@@ -1,0 +1,19 @@
+{
+  "name": "trakfind-meta",
+  "main": "dist/main.min.js",
+  "version": "2.0.0-rc.3",
+  "homepage": "https://github.com/skwerlzu/tf-meta",
+  "authors": [
+    "Eli Grey <me@eligrey.com>"
+  ],
+  "description": "An meta scraper",
+  "keywords": [
+    "TF_META"
+  ],
+  "license": "MIT",
+  "ignore": [
+      "*",
+      "!dist/*",
+      "!LICENSE.md"
+  ]
+}

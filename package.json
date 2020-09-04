@@ -1,0 +1,65 @@
+{
+  "_from": "git+https://github.com/informedecommerce/trakfind-meta.git",
+  "_id": "trakfind-meta@1.0.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/trakfind-meta",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "trakfind-meta@git+https://github.com/informedecommerce/trakfind-meta.git",
+    "name": "trakfind-meta",
+    "escapedName": "trakfind-meta",
+    "rawSpec": "git+https://github.com/informedecommerce/trakfind-meta.git",
+    "saveSpec": "git+https://github.com/informedecommerce/trakfind-meta.git",
+    "fetchSpec": "https://github.com/informedecommerce/trakfind-meta.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/informedecommerce/trakfind-meta.git#499b0f5c4bf89af820a50980cdb2c5145f4e471a",
+  "_spec": "trakfind-meta@git+https://github.com/informedecommerce/trakfind-meta.git",
+  "_where": "/home/trakfind/clients/mobileboilerplate/mobile-boilerplate",
+  "author": {
+    "name": "TrakFind llc",
+    "email": "info@trakfind.com"
+  },
+  "bugs": {
+    "url": "https://github.com/skwerlzu/TF_META/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "TrakFind Meta Handling",
+   "dependencies": {
+   },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-transform-modules-umd": "^7.1.0",
+    "babel-preset-minify": "^0.4.3"
+  },
+  "files": [
+    "dist/source.js",
+    "dist/main.min.js",
+  ],
+  "homepage": "https://github.com/informedecommerce/trakfind-meta.git#readme",
+  "keywords": [
+    "TF_META"
+  ],
+  "license": "PRIVATE",
+  "main": "dist/main.min.js",
+  "name": "trakfind-meta",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/informedecommerce/trakfind-meta.git"
+  },
+  "scripts": {
+    "build": "npm run build:development && npm run build:production",
+    "build:development": "babel -o dist/source.js --plugins @babel/plugin-transform-modules-umd src/source.js",
+    "build:production": "babel -o dist/main.min.js -s --plugins @babel/plugin-transform-modules-umd --presets minify src/source.js",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "version": "1.0.0"
+}
