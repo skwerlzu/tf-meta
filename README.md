@@ -9,7 +9,7 @@ Installation
 
 ```bash
 # Basic Node.JS installation
-meteor npm install trakfin-meta@https://github.com/skwerlzu/tf-meta.git
+meteor npm install trakfind-meta@https://github.com/skwerlzu/tf-meta.git
 ```
 
 Via application package json:
