@@ -10,6 +10,9 @@ Installation
 ```bash
 # Basic Node.JS installation
 meteor npm install trakfind-meta@https://github.com/skwerlzu/tf-meta.git
+
+# Register server methods
+import 'trakfind-meta/dist/server.min.js'
 ```
 
 Via application package json:
