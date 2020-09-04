@@ -9,7 +9,7 @@ Installation
 
 ```bash
 # Basic Node.JS installation
-meteor npm install agile-npm@https://github.com/informedecommerce/agile-npm.git
+meteor npm install trakfin-meta@https://github.com/skwerlzu/tf-meta.git
 ```
 
 Via application package json:
