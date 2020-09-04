@@ -49,7 +49,8 @@
     "TF_META"
   ],
   "license": "PRIVATE",
-  "main": "dist/main.min.js",
+  "main": "dist/client.min.js",
+	"server": "dist/server.min.js",
   "name": "trakfind-meta",
   "repository": {
     "type": "git",
